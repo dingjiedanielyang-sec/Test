@@ -22,3 +22,6 @@ async function match(){
 
 }
 
+async function createJiraTicket(){
+
+}
