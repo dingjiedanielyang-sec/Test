@@ -11,6 +11,9 @@
 #
 name: "CodeQL"
 
+paths-ignore:
+  - spec/
+
 on:
   push:
     branches: [ codeQL_Evaluation-3 ]
