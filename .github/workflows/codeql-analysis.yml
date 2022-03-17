@@ -27,6 +27,11 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    paths:
+      - ./
+    paths-ignore:
+     - spec
+     - docs
     permissions:
       actions: read
       contents: read
