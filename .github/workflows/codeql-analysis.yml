@@ -13,13 +13,13 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ codeQL_Evaluation-3 ]
+    branches: [ codeQL_Evaluation-3, master ]
     paths-ignore:
      - ./spec
      - ./docs
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ codeQL_Evaluation-3 ]
+    branches: [ codeQL_Evaluation-3, master ]
   schedule:
     - cron: '41 13 * * 1'
 
