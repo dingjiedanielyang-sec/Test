@@ -2,6 +2,7 @@ import { seal } from './utils.js';
 
 // eslint-disable-next-line unicorn/better-regex
 var t = /<script type="application\/json">((.|\s)*?)<\/script>/;
+var EMAIL_REGEX = /\A(([a-z0-9.!\#$%&'*+\/=?^_`{|}~-]+)@((?:[-a-z0-9]+\.)+[a-z]{2,}))(\s*,\s*([^:@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,}))*\z/i
 export const ZUDI = /^(\{){0,1}[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}(\}){0,1}$/
 export const MUSTACHE_EXPR = seal(/\{\{[\s\S]*|[\s\S]*\}\}/gm); // Specify template detection regex for SAFE_FOR_TEMPLATES mode
 export const ERB_EXPR = seal(/<%[\s\S]*|[\s\S]*%>/gm);
