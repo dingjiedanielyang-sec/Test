@@ -18,5 +18,20 @@ async function pullSentryEventsBasedOnIssues(issueID){
         .catch(err => console.error(err));
 }
 
-    
+async function match(){
 
+}
+
+async function createJiraTicket(){
+
+}
+
+  function isValidURL(string) 
+        {
+            var res = 
+            string.match(/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-
+            ]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]
+            \.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|w
+            ww\.[a-zA-Z0-9]+\.[^\s]{2,})/gi);
+        return (res !== null);
+        };
